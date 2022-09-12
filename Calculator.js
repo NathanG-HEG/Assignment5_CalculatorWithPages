@@ -52,7 +52,7 @@ export default function Calculator({navigation}) {
                 </Pressable>
                 <Pressable
                     style={styles.button}
-                    onPress={() => navigation.navigate('History', {param: history})}
+                    onPress={() => navigation.navigate('History', {_history: history})}
                 >
                     <Text>HISTORY</Text>
                 </Pressable>

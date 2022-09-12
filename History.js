@@ -1,14 +1,14 @@
 import {FlatList, Text, View, StyleSheet} from "react-native";
 
 export default function History({route, navigation}) {
-    const {param} = route.params;
+    const {_history} = route.params;
 
     return (
         <View style={styles.container}>
             <Text>History</Text>
             <View style={styles.history}>
                 <FlatList
-                    data={param}
+                    data={_history}
                     renderItem={({item}) => <Text style={styles.result}>{item}</Text>}
                 />
             </View>
